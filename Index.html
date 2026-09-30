@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Top Life Hotel | Bar, grill and live nights</title>
+<meta name="description" content="Cold drinks, nyama choma and live music. Book a table at Top Life Hotel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#top">TOP LIFE HOTEL</a>
+  <ul><li><a href="#nights">This week</a></li><li><a href="#menu">Menu</a></li><li><a href="#about">About</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn solid" href="#book">Book a table</a>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <div class="wrap">
+  <div>
+   <h1 class="sign">Top Life<span>Hotel</span></h1>
+   <p class="lede">Ice-cold drinks, charcoal-grilled meat and a live act most nights. Come hungry, stay late.</p>
+   <div class="cta">
+    <a class="btn solid" href="#book">Book a table</a>
+    <a class="btn ghost" href="#menu">See the menu</a>
+   </div>
+  </div>
+  <aside class="open" aria-label="Opening hours">
+   <h3>Opening hours</h3>
+   <dl>
+    <dt>Monday to Thursday</dt><dd>4pm to 1am</dd>
+    <dt>Friday and Saturday</dt><dd>2pm to 4am</dd>
+    <dt>Sunday</dt><dd>2pm to midnight</dd>
+   </dl>
+   <div class="status" id="status" role="status"><i class="dot"></i><span>Checking hours</span></div>
+  </aside>
+ </div>
+</div>
+
+<section id="nights">
+ <div class="wrap">
+  <h2>What's on this week</h2>
+  <p>Every night has a reason to come. Tables fill by 8pm on Friday and Saturday, so book ahead.</p>
+  <ul class="week" id="week">
+   <li data-d="1"><b>Monday</b><span>Steady start: jazz on the speakers and 2-for-1 beers until 7pm</span><em>Free entry</em></li>
+   <li data-d="2"><b>Tuesday</b><span>Pool tournament, sign-up at the bar from 6pm</span><em>KES 300 to enter</em></li>
+   <li data-d="3"><b>Wednesday</b><span>Pub quiz, teams of up to five, cash prize for the winners</span><em>Free entry</em></li>
+   <li data-d="4"><b>Thursday</b><span>Ladies' night, cocktails half price until 10pm</span><em>Free entry</em></li>
+   <li data-d="5"><b>Friday</b><span>Live band from 9pm, then the DJ until close</span><em>KES 500 after 9pm</em></li>
+   <li data-d="6"><b>Saturday</b><span>Resident DJ, bottle service and a full grill menu</span><em>KES 500 after 9pm</em></li>
+   <li data-d="0"><b>Sunday</b><span>Football on the big screens, nyama choma platters to share</span><em>Free entry</em></li>
+  </ul>
+ </div>
+</section>
+
+<section id="menu" class="alt">
+ <div class="wrap">
+  <h2>Food and drink</h2>
+  <p>Grilled to order over charcoal. Prices in Kenya shillings, served until an hour before close.</p>
+  <div class="tabs" role="tablist" aria-label="Menu sections">
+   <button class="tab" role="tab" aria-selected="true" aria-controls="m-grill" id="t-grill">From the grill</button>
+   <button class="tab" role="tab" aria-selected="false" aria-controls="m-drinks" id="t-drinks">Drinks</button>
+   <button class="tab" role="tab" aria-selected="false" aria-controls="m-bites" id="t-bites">Bar bites</button>
+  </div>
+  <div class="menu on" role="tabpanel" id="m-grill" aria-labelledby="t-grill">
+   <div class="item"><div><strong>Nyama choma, half kilo</strong><small>Goat or beef, kachumbari, ugali or chips</small></div><span>1,100</span></div>
+   <div class="item"><div><strong>Whole tilapia</strong><small>Deep-fried or grilled, ugali, greens</small></div><span>950</span></div>
+   <div class="item"><div><strong>Chicken quarter</strong><small>Marinated overnight, served with chips</small></div><span>700</span></div>
+   <div class="item"><div><strong>Mixed grill platter</strong><small>Serves 3 to 4, three meats and two sides</small></div><span>3,200</span></div>
+   <div class="item"><div><strong>Mutura and smokies</strong><small>Street-style, with kachumbari</small></div><span>350</span></div>
+   <div class="item"><div><strong>Sukuma wiki</strong><small>Add to any plate</small></div><span>150</span></div>
+  </div>
+  <div class="menu" role="tabpanel" id="m-drinks" aria-labelledby="t-drinks" hidden>
+   <div class="item"><div><strong>Local beer</strong><small>Tusker, White Cap, Guinness</small></div><span>300</span></div>
+   <div class="item"><div><strong>Dawa cocktail</strong><small>Vodka, lime, honey, crushed ice</small></div><span>550</span></div>
+   <div class="item"><div><strong>Whisky, single</strong><small>Ask for today's selection</small></div><span>from 300</span></div>
+   <div class="item"><div><strong>Bottle service</strong><small>Includes mixers and a reserved table</small></div><span>from 6,500</span></div>
+   <div class="item"><div><strong>Fresh juice</strong><small>Passion, mango or mixed</small></div><span>250</span></div>
+   <div class="item"><div><strong>Soda and water</strong></div><span>100</span></div>
+  </div>
+  <div class="menu" role="tabpanel" id="m-bites" aria-labelledby="t-bites" hidden>
+   <div class="item"><div><strong>Masala chips</strong><small>Tossed in spicy tomato sauce</small></div><span>400</span></div>
+   <div class="item"><div><strong>Chicken wings</strong><small>Six pieces, choose honey-chilli or plain</small></div><span>650</span></div>
+   <div class="item"><div><strong>Samosa</strong><small>Beef, four pieces</small></div><span>300</span></div>
+   <div class="item"><div><strong>Fish fingers</strong><small>With tartare sauce</small></div><span>550</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap split">
+  <div>
+   <h2>A neighbourhood bar with a proper kitchen</h2>
+   <p>Top Life Hotel started as a place to share a plate of nyama choma after work, and it still is. The grill stays lit all evening, the sound system is tuned for conversation until 9pm, then turned up.</p>
+   <p>Bring a group. We seat parties of up to 20 and can set aside a corner for birthdays and send-offs.</p>
+  </div>
+  <ul class="proof">
+   <li><q>Best goat in the area and the band on Fridays is worth the trip alone.</q><cite>Regular, Friday crowd</cite></li>
+   <li><q>Booked a table for twelve on the day. They had it ready and the drinks were already cold.</q><cite>Birthday party host</cite></li>
+   <li><q>Safe, loud in the right way, and the staff remember your order.</q><cite>Weekly quiz team</cite></li>
+  </ul>
+ </div>
+</section>
+
+<section id="book" class="alt">
+ <div class="wrap split">
+  <div>
+   <h2>Book a table</h2>
+   <p>Send your details and we'll confirm on WhatsApp, usually within the hour. For groups over 10, call the bar directly.</p>
+   <p><strong>Call:</strong> <a href="tel:+254700000000">+254 768 303 202</a><br><strong>Find us:</strong> Lanet, Nakuru-Dundori, Nakuru</p>
+  </div>
+  <form id="bookForm" novalidate>
+   <div class="f full"><label for="n">Your name</label><input id="n" name="n" autocomplete="name" required></div>
+   <div class="f"><label for="d">Date</label><input id="d" type="date" required></div>
+   <div class="f"><label for="t">Time</label><select id="t" required>
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select>
+    <select id="minute" required>
+        <option>00</option><option>15</option><option>30</option><option>45</option>
+    </select>
+    <div class="ampm-group">
+        <button type="button" class="ampm-btn" data-ampm="AM">AM</button>
+        <button type="button" class="ampm-btn active" data-ampm="PM">PM</button>
+    </div>
+    <button type="button" id="choosrTime" class="btn solid small">Choose</button>
+    <input type="hidden" name="t" id="t" required>
+    </div>
+   <div class="f"><label for="g">Guests</label><input id="g" type="number" min="1" max="20" value="2" inputmode="numeric" required></div>
+   <div class="f"><label for="p">Phone</label><input id="p" type="tel" autocomplete="tel" placeholder="07xx xxx xxx" required></div>
+   <button class="btn solid" type="submit">Send booking on WhatsApp</button>
+   <p class="note" id="msg" aria-live="polite">We only use your details to confirm this booking.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div><strong>Top Life Hotel</strong><br>Bar, grill and live nights</div>
+  <div><strong>Hours</strong><br>Mon to Thu 4pm to 1am<br>Fri and Sat 2pm to 4am<br>Sun 2pm to midnight</div>
+  <div><strong>Contact</strong><br><a href="tel:+254700000000">+254 768 303 202</a><br>Please drink responsibly. 18+ only.</div>
+ </div>
+</footer>
+
+<div class="dock"><a class="btn ghost" href="tel:+254700000000">Call</a><a class="btn solid" href="#book">Book a table</a></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
