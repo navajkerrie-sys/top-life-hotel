@@ -118,3 +118,44 @@ footer strong{color:var(--ink)}
 .ampm-btn{padding:.6rem .9rem;border-radius:20px;border:1px solid #ffffff22;background:transparent;color:var(--ink);cursor:pointer}
 .ampm-btn.active{background:var(--brass);color:#2b0f18}
 .btn.small{min-height:38px;padding:0 1rem;font-size:.9rem}
+
+.rating{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:18px 0;
+}
+.rating .score{
+  font-weight:700;
+  font-size:20px;
+  color:#fff;
+}
+.stars{
+  display:flex;
+  gap:2px;
+}
+.stars svg{
+  width:30px;
+  height:30px;
+}
+.review-block{
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+  margin-left:6px;
+}
+.review-block .count{
+  font-size:35px; /* BIG & LONG */
+  font-weight:800;
+  color:#fff;
+  letter-spacing:0.5px;
+  transform:scaleX(1.1); /* makes it longer */
+  transform-origin:left;
+}
+.review-block .label{
+  font-size:25px;
+  font-weight:500;
+  color:#e8eaed;
+  margin-top:2px;
+  opacity:0.9;
+}

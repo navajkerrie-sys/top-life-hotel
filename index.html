@@ -29,13 +29,23 @@
     <a class="btn ghost" href="#menu">See the menu</a>
    </div>
   </div>
-  <aside class="open" aria-label="Opening hours">
-   <h3>Opening hours</h3>
-   <dl>
-    <dt>Monday to Thursday</dt><dd>4pm to 1am</dd>
-    <dt>Friday and Saturday</dt><dd>2pm to 4am</dd>
-    <dt>Sunday</dt><dd>2pm to midnight</dd>
-   </dl>
+  <aside>
+    <div class="rating">
+  <span class="score">4.4</span>
+  <div class="stars">
+    <!-- 4 full stars -->
+    <svg viewBox="0 0 24 24"><path d="M12 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L12 14.9l-4.94 2.8.94-5.49-4-3.9 5.53-.8L12 2.5z" fill="#fbbc05"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L12 14.9l-4.94 2.8.94-5.49-4-3.9 5.53-.8L12 2.5z" fill="#fbbc05"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L12 14.9l-4.94 2.8.94-5.49-4-3.9 5.53-.8L12 2.5z" fill="#fbbc05"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L12 14.9l-4.94 2.8.94-5.49-4-3.9 5.53-.8L12 2.5z" fill="#fbbc05"/></svg>
+    <!-- 4.4 star - half -->
+    <svg viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="44%" stop-color="#fbbc05"/><stop offset="44%" stop-color="rgba(255,255,255,0.3)"/></linearGradient></defs><path d="M12 2.5l2.47 5.01 5.53.8-4 3.9.94 5.49L12 14.9l-4.94 2.8.94-5.49-4-3.9 5.53-.8L12 2.5z" fill="url(#half)"/></svg>
+  </div>
+  <div class="review-block">
+    <span class="count" id="reviewCount" data-target="127">0</span>
+    <div class="reviews-bottom">Reviews on<br>Google</div>
+  </div>
+</div>
    <div class="status" id="status" role="status"><i class="dot"></i><span>Checking hours</span></div>
   </aside>
  </div>
@@ -116,7 +126,8 @@
   <form id="bookForm" novalidate>
    <div class="f full"><label for="n">Your name</label><input id="n" name="n" autocomplete="name" required></div>
    <div class="f"><label for="d">Date</label><input id="d" type="date" required></div>
-   <div class="f"><label for="t">Time</label><select id="t" required>
+   <div class="time-pick">
+    <select id="hour" required>
     <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select>
     <select id="minute" required>
         <option>00</option><option>15</option><option>30</option><option>45</option>
@@ -125,7 +136,7 @@
         <button type="button" class="ampm-btn" data-ampm="AM">AM</button>
         <button type="button" class="ampm-btn active" data-ampm="PM">PM</button>
     </div>
-    <button type="button" id="choosrTime" class="btn solid small">Choose</button>
+    <button type="button" id="chooseTime" class="btn solid small">Choose</button>
     <input type="hidden" name="t" id="t" required>
     </div>
    <div class="f"><label for="g">Guests</label><input id="g" type="number" min="1" max="20" value="2" inputmode="numeric" required></div>

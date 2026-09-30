@@ -72,4 +72,33 @@ form.addEventListener('submit', (e)=>{
   const waNumber = '254712364610';
   const waLink = `https://wa.me/${waNumber}?text=${text}`;
 });
+const countEl = document.getElementById('reviewCount');
+let counted = false;
+
+function animateCount(el, target) {
+  let current = 0;
+  const step = target / 200; // speed
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      el.textContent = target;
+      clearInterval(timer);
+    } else {
+      el.textContent = Math.floor(current);
+    }
+  }, 20);
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !counted) {
+      counted = true;
+      const target = parseInt(countEl.getAttribute('data-target'));
+      animateCount(countEl, target);
+    }
+  });
+}, { threshold: 0.5 });
+
+if (countEl) observer.observe(countEl);
+
 })();
