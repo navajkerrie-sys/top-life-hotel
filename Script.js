@@ -20,7 +20,7 @@
   if(!n||!p||!dt.value){m.textContent='Add your name, phone number and date to continue.';m.style.color='var(--neon)';return}
   m.style.color='';m.textContent='Opening WhatsApp with your booking.';
   var txt='Hi Top Life Hotel, I would like to book a table.\nName: '+n+'\nDate: '+dt.value+'\nTime: '+document.getElementById('t').value+'\nGuests: '+document.getElementById('g').value+'\nPhone: '+p;
-  window.open('https://wa.me/254700000000?text='+encodeURIComponent(txt),'_blank','noopener');
+  window.open('https://wa.me/254712364610?text='+encodeURIComponent(txt),'_blank','noopener');
  });
 const form = document.querySelector('form');
 const hourSel = document.getElementById('hour');
